@@ -1,0 +1,22 @@
+.row{
+    padding: 20px;
+}
+div{
+    background-color: #333333;
+}
+h1, h3{
+    display: inline;
+}
+#experiencia{
+    color: #4f8dcb;
+    margin-left: 15px;
+}
+h1{
+    color: #cc874e
+}
+h3{
+    color: #9dd2e8
+}
+p{
+    color: #ffffff
+}

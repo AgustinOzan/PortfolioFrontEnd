@@ -1,0 +1,48 @@
+.row{
+    padding: 15px;
+}
+div{
+    background-color: #333333;
+    text-align: left;
+}
+#nombre{
+    font-weight: bold;
+    margin-top: 5%;
+    font-size: 30px;
+    color: #9dd2e8;
+    
+}
+#dedicacion{
+    color: #a7cd88;
+}
+#titulo_acm{
+    color: #4f8dcb;
+    margin-left: 15px;
+}
+#descripcion_acm{
+    color: #ffffff;
+    margin-left: 15px;
+}
+@media (min-width:576px){
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        border-color: rgb(202, 202, 202);
+        border-width: 7px;
+        border-style: solid;
+        box-shadow: 4px 4px 3px #282828;
+        left: 3%;
+        top: 300px;
+    }
+}
+@media (max-width:575px){
+        #fotoperfil{
+            position: absolute;
+            width: 30%;
+            border-radius: 100%;
+            box-shadow: 3px 3px 3px grey;
+            left: 35%;
+            top: 285px;
+        }
+    }

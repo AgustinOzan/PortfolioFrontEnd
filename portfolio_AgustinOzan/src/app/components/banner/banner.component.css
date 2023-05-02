@@ -1,0 +1,7 @@
+.row{
+    background-image: url("../../../assets/Banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
