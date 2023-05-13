@@ -1,18 +1,22 @@
 <div class="row">
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-primary btn-sm" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar
+        </button>
+    </div>
+
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/FotoPerfil.jpg" class="img-fluid" id="fotoperfil">
+        <img src="{{persona.img}}" class="img-fluid" id="fotoperfil">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <P id="nombre">Ozán Agustín</P>
+        <P id="nombre">{{persona.nombre}} {{persona.apellido}}</P>
         <p id="dedicacion">Full Stack Developer Jr.</p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1 id="titulo_acm">Acerca de mi</h1>
-            <p id="descripcion_acm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quis corrupti deserunt expedita et necessitatibus 
-                provident recusandae, laborum quaerat quisquam nobis nam 
-                rem mollitia natus assumenda hic dolore? Sequi, recusandae officiis?</p>
+            <p id="descripcion_acm">{{persona.descripcion}}</p>
         </span>
     </div>
 </div>

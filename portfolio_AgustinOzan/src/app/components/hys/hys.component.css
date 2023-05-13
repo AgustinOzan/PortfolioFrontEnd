@@ -2,7 +2,9 @@
     background-color: #333333;
     padding: 20px;
 }
-#hys{
-    color: #4f8dcb;
-    margin-left: 15px;
+
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

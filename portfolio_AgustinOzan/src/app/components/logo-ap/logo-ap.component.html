@@ -8,7 +8,8 @@
             <a href="https://github.com/AgustinOzan" target="_blank"><img src="../../../assets/github.png" id="github"></a>
             <a href="https://www.instagram.com/agustinozan/" target="_blank"><img src="../../../assets/instagram.png" id="instagram"></a>
             <a href="https://www.facebook.com/agustin.ozan.1/" target="_blank"><img src="../../../assets/facebook.png" id="facebook"></a> 
-            <button type="button" class="btn btn-success btn-sm">INGRESAR</button>  
+            <button type="button" class="btn btn-success btn-sm" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+            <button type="button" class="btn btn-danger btn-sm" (click)="onLogout()" *ngIf="isLogged">SALIR</button>  
         </div>
     </div>
 </div>
