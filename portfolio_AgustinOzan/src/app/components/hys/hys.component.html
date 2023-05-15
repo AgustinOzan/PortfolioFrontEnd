@@ -1,24 +1,23 @@
 <div class="row">
-    <h1 id="hys">Hard & Soft skills</h1>
-    <div class="col-lg-2">
-        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nuevo Skill</button>
+    <div>
+        <button type="button" routerLink="/newskill" class="btn btn-success btn-sm" *ngIf="isLogged">
+            <i class="bi bi-file-earmark-plus"></i></button>
+            <h1 id="hys">Hard & Soft skills</h1>
     </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo" *ngFor="let skill of skill">
         <circle-progress 
             [percent]="(skill.porcentaje)" 
-            [radius]="100" 
-            [imageSrc]="''"
+            [radius]="95" 
             [showTitle]="true" 
             [title]="(skill.nombre)"
-            [titleColor]="'#000000'" 
-            [showImage]="false" 
-            [imageHeight]="80" 
-            [imageWidth]="80" 
+            [titleFontWeight]="'bold'"
+            [titleColor]="'#cc874e'" 
+            [titleFontSize]="'27px'"
+            [titleFormat]=""
             [showUnits]="false"
             [showSubtitle]="false" 
             [outerStrokeWidth]="10" 
-            [innerStrokeWidth]="5" 
+            [innerStrokeWidth]="3" 
             [outerStrokeColor]="'#78C000'"
             [innerStrokeColor]="'#C7E596'" 
             [animation]="true" 

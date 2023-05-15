@@ -3,23 +3,23 @@
 }
 body{
     background-color: #333333;
+    margin-top: 25px;
+    word-break:break-all;
 }
 div{
     background-color: #333333;
 }
-h1, h3{
+h1, h4{
     display: inline;
 }
 #experiencia{
     color: #4f8dcb;
-    margin-left: 15px;
+    margin-left: 20px;
+
 }
-h1{
+h4{
     color: #cc874e
 }
-h3{
-    color: #9dd2e8
-}
 p{
-    color: #ffffff
+    color: #9dd2e8
 }

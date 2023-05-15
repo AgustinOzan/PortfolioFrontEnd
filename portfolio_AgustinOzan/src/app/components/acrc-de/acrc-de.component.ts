@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./acrc-de.component.css']
 })
 export class AcrcDeComponent implements OnInit{
-  persona: persona = null;
+  persona: persona = new persona("","","","");
   
   constructor(public personaService: PersonaService, private tokenService: TokenService){ }
   isLogged = false;

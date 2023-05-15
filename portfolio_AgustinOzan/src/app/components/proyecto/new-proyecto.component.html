@@ -2,17 +2,22 @@
     <div class="container py-5 h-100">
         <div class="row">
             <div>
-                <img src="../../../assets/APLogo.png" id="logoAP"><h2>Hard & Soft Skill</h2>
+                <img src="../../../assets/APLogo.png" id="logoAP"><h2>Proyectos</h2>
                 <br>
                 <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                     <div class="form-group">
-                        <label for="nombre" class="text-white">Skill</label>
+                        <label for="nombre" class="text-white">Nombre del proyecto</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="porcentaje" class="text-white">Porcentaje (%)</label>
-                        <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                        <label for="descripcion" class="text-white">Descripción</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="link" class="text-white">Link</label>
+                        <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required>
                     </div>
                     <br>
                     <button class="btn btn-info"><i class="bi bi-plus-square"></i>

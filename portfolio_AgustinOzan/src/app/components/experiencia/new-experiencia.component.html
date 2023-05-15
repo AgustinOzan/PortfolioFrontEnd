@@ -1,20 +1,26 @@
-<div class="container">
+<section class="vh-100 gradient-custom">
+<div class="container py-5 h-100">
     <div class="row">
         <div>
+            <img src="../../../assets/APLogo.png" id="logoAP"><h2>Experiencia Laboral</h2>
+            <br>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreE">Nombre de la empresa</label>
+                    <label for="nombreE" class="text-white">Nombre de la empresa</label>
                     <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
                 </div>
+                <br>
                 <div class="form-group">
-                    <label for="descripcionE">Descripción de la tarea</label>
+                    <label for="descripcionE" class="text-white">Descripción de la tarea</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
-                <button class="btn btn-info">
-                     Agregar experiencia
-                </button>
+                <br>
+                <button class="btn btn-info"><i class="bi bi-plus-square"></i>
+                     Agregar
+                    </button> 
+                    <pre></pre><a [routerLink]="['']">Volver</a>
             </form>
-
         </div>
     </div>
 </div>
+</section>

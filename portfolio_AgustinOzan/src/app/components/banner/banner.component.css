@@ -5,3 +5,11 @@
     background-size: cover;
     height: 350px;
 }
+@media (max-width:575px){
+
+    .row{
+        height: 150px;
+    }
+
+
+}

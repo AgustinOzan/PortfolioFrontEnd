@@ -1,0 +1,31 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100" *ngIf="proyecto">
+        <div class="row">
+            <div>
+                <img src="../../../assets/APLogo.png" id="logoAP"><h2>Proyectos</h2>
+                <br>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre" class="text-white">Nombre del proyecto</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="proyecto.nombre" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="descripcion" class="text-white">Descripción</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="proyecto.descripcion" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="link" class="text-white">Link</label>
+                        <input type="text" class="form-control" id="link" name="link" [(ngModel)]="proyecto.link" required>
+                    </div>
+                    <br>
+                    <button class="btn btn-info"><i class="bi bi-plus-square"></i>
+                         Actualizar
+                        </button> 
+                        <pre></pre><a [routerLink]="['']">Volver</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>

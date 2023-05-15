@@ -1,20 +1,26 @@
-<div class="container" *ngIf="skill">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombre">Skill</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="porcentaje">Porcentaje</label>
-                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
-                </div>
-                <button class="btn btn-info">
-                     Actualizar
-                </button>
-            </form>
-
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100" *ngIf="skill">
+        <div class="row">
+            <div>
+                <img src="../../../assets/APLogo.png" id="logoAP"><h2>Hard & Soft Skill</h2>
+                <br>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre" class="text-white">Skill</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="porcentaje" class="text-white">Porcentaje (%)</label>
+                        <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+                    </div>
+                    <br>
+                    <button class="btn btn-info"><i class="bi bi-plus-square"></i>
+                         Actualizar
+                        </button> 
+                        <pre></pre><a [routerLink]="['']">Volver</a>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+    </section>

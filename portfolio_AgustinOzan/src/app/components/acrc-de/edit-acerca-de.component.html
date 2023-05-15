@@ -1,31 +1,38 @@
-<div class="container" *ngIf="persona">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcion">Descripción</label>
-                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
-                </div>
-                <div class="form-group">
-                    <label for="img">Foto de perfil</label>
-                    <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)"
-                    accept=".jpg, .jpeg, .png">
-                </div>
-                
+<section class="vh-120 gradient-custom">
+    <div class="container py-5 h-100" *ngIf="persona">
+        <div class="row">
+            <div>
+                <img src="../../../assets/APLogo.png" id="logoAP"><h2>Acerca de mi</h2>
                 <br>
-                <button class="btn btn-info">
-                     Actualizar
-                </button>
-            </form>
-
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre" class="text-white">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="apellido" class="text-white">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="descripcion" class="text-white">Descripción</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="img" class="text-white">Foto de perfil</label>
+                        <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)"
+                        accept=".jpg, .jpeg, .png">
+                    </div>
+                    <br>
+                    <div class="imagen">
+                        <img [src]="imageService.url" width="150px">
+                    </div>
+                    <button class="btn btn-info"><i class="bi bi-plus-square"></i>
+                        Actualizar
+                       </button> 
+                       <pre></pre><a [routerLink]="['']">Volver</a>
+                </form>
+    
+            </div>
         </div>
     </div>
-</div>
+</section>

@@ -1,12 +1,28 @@
 <div class="row">
-    <h1 id="proyectos">Proyectos Realizados</h1>
-    <div class="contenedor">
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h1>Encriptador</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente pariatur neque, quos beatae magni quod dolor cumque asperiores, quas quae atque sed quaerat error cum minima reprehenderit nesciunt ab!</p>
-        </div>
-        <div class="clo-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <img src="../../../assets/encriptador.png" class="imf-fluid img-proyecto">
-        </div>
+    <div>
+        <button type="button" class="btn btn-success btn-sm" routerLink="/newproyecto" *ngIf="isLogged">
+            <i class="bi bi-file-earmark-plus"></i></button>
+        <h1 id="educacion">Proyectos</h1>
+    </div>
+
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+    <table class="table">
+        <body>
+            <tr *ngFor="let Proyecto of proyecto">
+                <td class="col-lg-3"><h4>{{Proyecto.nombre}}</h4></td>
+                <td class="col-lg-6"><p>{{Proyecto.descripcion}}</p></td>
+                <td class="col-lg-2"><p id="link">{{Proyecto.link}}</p></td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-warning btn-sm" routerLink="/editproy/{{Proyecto.id}}">
+                    <i class="bi bi-pencil-square"></i></button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-danger btn-sm" (click)="delete(Proyecto.id)">
+                    <i class="bi bi-trash3"></i></button>
+                </td>
+            </tr>
+        </body>
+    </table>
     </div>
 </div>

@@ -1,11 +1,18 @@
 .row{
     background-color: #282828;
+    line-height: 1.1;
 }
 footer{
     color: #fefefe;
     font-size: 14px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     box-shadow: 2px -2px 2px #252526;
+}
+p{
+    margin-top: 15px;
+}
+img{
+    width: 20px;
+    align-items: center;
+    margin-right: 0.2em;
 }
