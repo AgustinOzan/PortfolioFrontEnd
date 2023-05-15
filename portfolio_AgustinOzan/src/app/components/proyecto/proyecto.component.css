@@ -33,3 +33,6 @@ p{
     flex-direction: column;
     align-items: center;  
 }
+#tabla{
+    padding-left: 30px;
+}
