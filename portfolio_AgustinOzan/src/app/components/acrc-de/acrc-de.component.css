@@ -6,7 +6,7 @@ div{
     text-align: left;
 }
 
-@media (min-width:576px){
+@media (min-width:576px) and (max-width:1466px){
     #fotoperfil{
         position: absolute;
         width: 15%;
