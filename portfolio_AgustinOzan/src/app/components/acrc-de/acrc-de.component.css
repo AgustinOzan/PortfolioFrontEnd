@@ -6,7 +6,7 @@ div{
     text-align: left;
 }
 
-@media (min-width:576px){
+@media (min-width:1366px){
     #fotoperfil{
         position: absolute;
         width: 15%;
@@ -18,6 +18,41 @@ div{
         left: 85px;
         top: 350px;
     }
+    #nombre{
+        font-weight: bold;
+        font-size: 30px;
+        color: #9dd2e8;
+        margin-left: 70px;
+    }
+    #dedicacion{
+        color: #a7cd88;
+        margin-left: 70px;
+    }
+    #titulo_acm{
+        color: #4f8dcb;
+        margin-left: 20px;
+    }
+    #descripcion_acm{
+        color: #ffffff;
+        margin-left: 30px;
+        word-break:break-all;
+        hyphens: auto;
+    }
+    
+    }
+    @media (width:1920px){
+        #fotoperfil{
+            position: absolute;
+            width: 15%;
+            border-radius: 100%;
+            border-color: rgb(202, 202, 202);
+            border-width: 7px;
+            border-style: solid;
+            box-shadow: 4px 4px 3px #282828;
+            left: 85px;
+            top: 250px;
+        }
+  
     #nombre{
         font-weight: bold;
         font-size: 30px;
